@@ -8,6 +8,7 @@
  *                -> HEX 0x0000 = DEC      0 / 128 =   0km/h 
  *
  */
+
 #include <string.h>
 #include <stdio.h>
 #include<bits/stdc++.h>
@@ -22,78 +23,78 @@ using namespace std;
     std::cout << bits << std::endl;
 }
   void loop(){
-int x = 0;      
-int kph = 128;
-char choice[10];                                // To store user input for "dec" or "hex"
+    int x = 0;      
+    int kph = 128;
+    char choice[10];                              // To store user input for "dec" or "hex"
 
 
-    printf("Dec or Hex ?: ");
+  printf("Dec or Hex ?: ");
     scanf("%s", choice);
   if (strcmp(choice, "dec") == 0)  {
-    	printf("Enter Dec Value :");            // Enter Dec Value         
-    scanf("%d" , &x);                           // Initial Dec Value: 1444  
-        printf("Hex Value: %x\n", x);
-  }
-  else if(strcmp(choice, "hex") == 0) {
-  	    printf("Enter Hex Value :");            // Enter Dec Value        
-    scanf("%x", &x);                            // Initial Hex Value: 0x05a4 to Dec: 1444   
-      printf("Dec Value: %d\n", x);
+   printf("Enter Dec Value :");                   // Enter Dec Value         
+    scanf("%d" , &x);                             // Initial Dec Value: 1444  
+   printf("Hex Value: %x\n", x);
+}
+else if(strcmp(choice, "hex") == 0) {
+ 	printf("Enter Hex Value :");                    // Enter Dec Value        
+    scanf("%x", &x);                              // Initial Hex Value: 0x05a4 to Dec: 1444   
+  printf("Dec Value: %d\n", x);
 	
- }
-  else {
-        printf("Invalid choice! Please enter 'dec' or 'hex'.\n");
-    }
+}
+else {
+  printf("Invalid choice! Please enter 'dec' or 'hex'.\n");
+}
     
     int speed = x / kph;
-//  x = ("%x", 0x5ae4) / 128;                   // Hex: 0x05a4 to Dec: 1444
+//  x = ("%x", 0x5ae4) / 128;                     // Hex: 0x05a4 to Dec: 1444
 
-    printf("KPH: %d\n", speed);
-    printf("KPH Binary: ");
-    printBinary(speed);
+  printf("KPH: %d\n", speed);
+  printf("KPH Binary: ");
+  printBinary(speed);
 
-  x ^= x >> 8;                                  // Binary: 10110100001 Dec: 1441
+    x ^= x >> 8;                                  // Binary: 10110100001 Dec: 1441
     
-    printf("8 bit Value Shift: %d\n", x);
-    printf("8 bit Binary Value: ");
-    printBinary(x);
+  printf("8 bit Value Shift: %d\n", x);
+  printf("8 bit Binary Value: ");
+  printBinary(x);
 
-  x ^= x >> 4;                                 // Binary: 10111111011 Dec: 1531
+    x ^= x >> 4;                                  // Binary: 10111111011 Dec: 1531
 
-    printf("4 bit Value Shift: %d\n", x);
-    printf("4 bit Binary Value: ");
-    printBinary(x);
+  printf("4 bit Value Shift: %d\n", x);
+  printf("4 bit Binary Value: ");
+  printBinary(x);
 
-  x &= 0xf;                                    // This keep the lowest 4 bits (0–15), vss a number between 0 -15   
+    x &= 0xf;                                     // This keep the lowest 4 bits (0ï¿½15), vss a number between 0 -15   
 
-    printf("XOR Lowest Bit: %d\n", x);         // Result: x = 11 in dec  (binary: 1011) or odd parity 
-    printf("XOR Lowest Bit Binary: "); 
-    printBinary(x);
+  printf("XOR Lowest Bit: %d\n", x);              // Result: x = 11 in dec  (binary: 1011) or odd parity 
+  printf("XOR Lowest Bit Binary: "); 
+  printBinary(x);
 
-  bool parity_bit=(0x6996 >> x) & 1;         // Constant formula parity_bit=(0x6996 >> x) & 1;
+    bool parity_bit=(0x6996 >> x) & 1;            // Constant formula parity_bit=(0x6996 >> x) & 1;
 
-    printf("Parity Bit: %d\n", parity_bit);
-  //  printf("Parity Bit Binary: ");
-    printBinary(parity_bit);
+  printf("Parity Bit: %d\n", parity_bit);
+//  printf("Parity Bit Binary: ");
+  printBinary(parity_bit);
 
-  if (parity_bit) {
-    printf("Parity is Odd.\n");
-} else {
-    printf("Parity is Even.\n");
+if (parity_bit) {
+  printf("Parity is Odd.\n");
+}
+else {
+  printf("Parity is Even.\n");
     
 }
 }
   int main(){
-        char yes[5];
-    do{
-    	loop();
-	
+    char yes[5];
+do{
+ 	loop();
 	
 	printf("Do you want to calculate again? (y/n): ");
-	   scanf("%s", yes);
+    scanf("%s", yes);
 }
-  while (strcmp(yes, "y") == 0);
-    printf("Goodbye!\n");
-    return 0;
+while (strcmp(yes, "y") == 0);
+  printf("Goodbye!\n");
+return 0;
 } 
   
     
