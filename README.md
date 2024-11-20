@@ -6,10 +6,6 @@ I am by no means a programmer. My notes below might be totally incorrect. In fac
 
 Below are my notes in regards to my attempt to understand the requirement of the Cummins CAN bus and/or 
 vehicle speed data, 0x215[7]  = {0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xFF}, parity being byte 6.
-TEST;
-TEST;
-TEST;
-
 
 **Parity Bit Code Analysis**
 
@@ -37,9 +33,7 @@ Example.
 Imagine you have two binary numbers: 0101 (decimal 5) and 1011 (decimal 11). 
 Performing a bitwise AND operation would compare each corresponding bit.
 
-0 & 1 = 0.
-1 & 0 = 0.
-1 & 1 = 1.
+0 & 1 = 0                                                                                                                                                                     1 & 0 = 0                                                                                                                                                                    1 & 1 = 1.
 
 This results in a new binary number 0001 (decimal 1). 
 
