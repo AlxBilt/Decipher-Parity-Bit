@@ -6,9 +6,9 @@ I am by no means a programmer. My notes below might be totally incorrect. In fac
 
 Below are my notes in regards to my attempt to understand the requirement of the Cummins CAN bus and/or 
 vehicle speed data, 0x215[7]  = {0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xFF}, parity being byte 6.
-TEST\n.
-TEST\n.
-TEST\n.
+TEST;
+TEST;
+TEST;
 
 
 **Parity Bit Code Analysis**
