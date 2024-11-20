@@ -8,7 +8,7 @@ Below are my notes in regards to my attempt to understand the requirement of the
 vehicle speed data, 0x215[7]  = {0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xFF}, parity being byte 6.
 
 
-*************************Parity Bit Code Analysis**************************************
+**Parity Bit Code Analysis**
 
 1.	What is Bitwise?
 
