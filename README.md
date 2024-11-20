@@ -33,9 +33,9 @@ Example:
 
 •	Imagine you have two binary numbers: 0101 (decimal 5) and 1011 (decimal 11). 
 •	Performing a bitwise AND operation would compare each corresponding bit: 
-o	0 & 1 = 0 
-o	1 & 0 = 0 
-o	1 & 1 = 1 
+0 & 1 = 0
+1 & 0 = 0 
+1 & 1 = 1 
 •	This results in a new binary number 0001 (decimal 1). 
 
 2.	Determining vss Parity Bit Calculation for Cummins Common Rail ECM.
