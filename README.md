@@ -33,9 +33,9 @@ Example:
 
 Imagine you have two binary numbers: 0101 (decimal 5) and 1011 (decimal 11). 
 Performing a bitwise AND operation would compare each corresponding bit: 
-0 & 1 = 0;
-1 & 0 = 0;
-1 & 1 = 1.
+i.   0 & 1 = 0;
+ii.  1 & 0 = 0;
+iii. 1 & 1 = 1.
 
 This results in a new binary number 0001 (decimal 1). 
 
