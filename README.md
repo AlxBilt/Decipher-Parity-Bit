@@ -4,7 +4,8 @@ Disclaimer:
 
 I am by no means a programmer. My notes below might be totally incorrect. In fact, it is a culmination of piecing together many separate source sights as a map for my own personal understanding. My notes are not my own original interpretation of the code. I am not a programmer, all though my desire says otherwise. I only started tinkering with programming in an effort to understand what my 2006 Ram 5.9 Cummins engine ECM require to detect the vehicle speed signal. This is because I swapped the motor into my 2001 Ford F550 which is pre-CANbus. One year later, here I am trying to wrap my head around C/C++ and Python for Everyone. Thanks Dr. Chuck Severance.....I think??? 
 
-Below is my notes in regards to my attept to understand the requirement of the Cummins CAN bus and/or vehicle speed data, 0x215[7]  = {0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xFF}, parity being byte 6.
+Below are my notes in regards to my attempt to understand the requirement of the Cummins CAN bus and/or 
+vehicle speed data, 0x215[7]  = {0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0xFF}, parity being byte 6.
 
 
 *************************Parity Bit Code Analysis**************************************
