@@ -1,6 +1,6 @@
 # XORbit Tool (Parity Bit Code Analysis)
 
-Disclaimer:  READ THIS IN RAW form for better interpretation of comparing or adding the binary numbers. 
+Disclaimer:  READ THIS IN RAW form for better interpretation of comparing or adding the binary numbers.                                  I use DEV C++ to compile and run the code. 
 
 I am by no means a programmer. My notes below might be totally incorrect. In fact, it is a culmination of piecing together many separate source sights as a map for my own personal understanding. My notes are not my own original interpretation of the code. I am not a programmer, all though my desire says otherwise. I only started tinkering with programming in an effort to understand what my 2006 Ram 5.9 Cummins engine ECM require to detect the vehicle speed signal. This is because I swapped the motor into my 2001 Ford F550 which is pre-CANbus. One year later, here I am trying to wrap my head around C/C++ and Python for Everyone. Thanks Dr. Chuck Severance.....I think??? 
 
